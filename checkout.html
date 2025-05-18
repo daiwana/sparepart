@@ -106,6 +106,15 @@
         </div>
       `;
     }
+
+    // Proses pembayaran (dummy)
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // ...proses pembayaran...
+      // localStorage.removeItem('cart');   // <-- HAPUS BARIS INI!
+      // window.location.href = 'page2.html';
+    });
   </script>
 </body>
 </html>

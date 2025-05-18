@@ -1,0 +1,49 @@
+/* page2 .css */
+
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1601933470928-c6f5f0f36a5b?auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Perkecil dan animasi untuk chart */
+#pieChart, #lineChart {
+  max-width: 300px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeScaleIn 1s ease forwards;
+  animation-delay: 0.5s; /* delay agar animasi lebih halus */
+}
+
+@keyframes fadeScaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+footer {
+  font-size: 0.875rem;
+}

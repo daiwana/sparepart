@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Wanna_Auto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-30">
+    <div class="flex items-center gap-2">
+      <svg class="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v-2a4 4 0 014-4h1m4 0h1a4 4 0 014 4v2m-5-6V4m0 0L7 8m5-4l5 4" />
+      </svg>
+      <h1 class="text-2xl font-bold text-gray-800 tracking-wide">Wanna_Auto</h1>
+    </div>
+    <a href="page2.html" class="text-blue-600 hover:underline font-semibold">Kembali ke Toko</a>
+  </header>
+
+  <!-- Checkout Content -->
+  <main class="flex-1 flex items-center justify-center py-12">
+    <div class="bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl">
+      <h2 class="text-3xl font-bold text-blue-700 mb-6 text-center">Checkout</h2>
+      <div id="checkoutCart" class="mb-6"></div>
+      <form class="space-y-4">
+        <h3 class="font-semibold text-lg mb-2">Data Pembeli</h3>
+        <input type="text" placeholder="Nama Lengkap" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+        <input type="text" placeholder="Alamat Pengiriman" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+        <input type="tel" placeholder="Nomor Telepon" required class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+        <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition text-lg">Bayar Sekarang</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10 mt-10">
+    <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Kontak -->
+      <div>
+        <h4 class="font-bold text-lg mb-2 text-blue-400">Kontak Kami</h4>
+        <p class="mb-1">WhatsApp: <a href="https://wa.me/6282117862420" class="hover:text-blue-300 underline">+62 821-1786-2420</a></p>
+        <p class="mb-1">Email: <a href="mailto:muhammaddaiwana@gmail.com" class="hover:text-blue-300 underline">muhammaddaiwana@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/wanna_project25" class="hover:text-blue-300 underline">@wanna_project25</a></p>
+      </div>
+      <!-- Alamat -->
+      <div>
+        <h4 class="font-bold text-lg mb-2 text-blue-400">Alamat Toko</h4>
+        <p class="mb-1">Jl. Otomotif No. 123</p>
+        <p class="mb-1">Kota Motor, 12345</p>
+        <p>Indonesia</p>
+      </div>
+      <!-- Media Sosial -->
+      <div>
+        <h4 class="font-bold text-lg mb-2 text-blue-400">Ikuti Kami</h4>
+        <div class="flex gap-4 mt-2">
+          <a href="https://facebook.com/wannaauto" target="_blank" aria-label="Facebook" class="hover:text-blue-400">
+            <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5.006 3.657 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 17.006 22 12"></path></svg>
+          </a>
+          <a href="https://instagram.com/wanna_auto" target="_blank" aria-label="Instagram" class="hover:text-pink-400">
+            <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 2.25a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5zm0 1.5a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5zm6.25 1.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path></svg>
+          </a>
+          <a href="mailto:info@wannaauto.com" aria-label="Email" class="hover:text-blue-400">
+            <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 6.81A2.25 2.25 0 0 1 4.25 5h15.5a2.25 2.25 0 0 1 2.24 1.81l-10 6.25-10-6.25zm-.01 2.43v8.01A2.25 2.25 0 0 0 4.25 19.5h15.5a2.25 2.25 0 0 0 2.25-2.25v-8.01l-9.47 5.91a.75.75 0 0 1-.81 0L2 9.24z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-gray-400 text-sm mt-8">
+      &copy; 2025 Wanna_Auto. Semua Hak Dilindungi.
+    </div>
+  </footer>
+
+  
+  <script>
+    // Ambil data keranjang dari localStorage
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    const checkoutCart = document.getElementById('checkoutCart');
+    if (cart.length === 0) {
+      checkoutCart.innerHTML = '<p class="text-gray-500 text-center">Keranjang kosong.</p>';
+    } else {
+      let total = 0;
+      checkoutCart.innerHTML = `
+        <h3 class="font-semibold text-lg mb-2">Ringkasan Pesanan</h3>
+        <div class="space-y-3 mb-3">
+          ${cart.map(item => {
+            total += item.harga * item.jumlah;
+            return `
+              <div class="flex items-center gap-4 border-b pb-3">
+                <img src="${item.gambar}" alt="${item.nama}" class="w-16 h-16 object-cover rounded shadow border">
+                <div class="flex-1">
+                  <p class="font-medium text-gray-800">${item.nama}</p>
+                  <p class="text-sm text-gray-500">${item.jumlah} x Rp ${item.harga.toLocaleString()}</p>
+                </div>
+                <span class="font-bold text-blue-700">Rp ${(item.harga * item.jumlah).toLocaleString()}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+        <div class="flex justify-between font-semibold text-lg mb-4">
+          <span>Total</span>
+          <span class="text-blue-700">Rp ${total.toLocaleString()}</span>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

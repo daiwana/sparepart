@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Datang di AutoParts</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/hero-animation.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Hero Section -->
+  <section class="hero-section relative">
+    <div class="hero-bg-overlay"></div> <!-- Tambahkan ini -->
+    <div class="overlay p-8 rounded">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white hero-title">Selamat Datang di AutoParts</h1>
+      <p class="text-lg md:text-xl text-white hero-subtitle">Platform E-commerce Spare Part Otomotif Terpercaya dan Terbaik</p>
+      <a href="page2.html"
+         class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 font-semibold transition-colors duration-200 shadow-lg">
+         Belanja Sekarang
+      </a>
+    </div>
+    <div class="absolute bottom-6 w-full text-center animate-bounce">
+      <button id="scrollToAnalisis" class="text-white text-lg font-medium bg-transparent border-none cursor-pointer focus:outline-none">
+        Scroll ke bawah untuk lihat analisa toko ⬇️
+      </button>
+    </div>
+  </section>
+
+  <!-- Analisis Penjualan -->
+  <section id="analisis" class="p-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Analisis Barang Terjual</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">Top Produk Terjual</h3>
+        <ul class="list-disc ml-5 text-gray-600">
+          <li>Oli Mesin Castrol - 1.200 Terjual</li>
+          <li>Kampas Rem - 850 Terjual</li>
+          <li>Aki GS Astra - 780 Terjual</li>
+        </ul>
+        <canvas
+          id="pieChart"
+          width="300"
+          height="300"
+          style="display:block;margin:16px auto 0 auto;max-width:500px;max-height:500px;">
+        </canvas>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">Statistik Penjualan Bulanan</h3>
+        <p class="text-gray-600">Total Penjualan April 2025: <span class="text-blue-600 font-bold">Rp 185.000.000</span></p>
+        <p class="text-gray-600">Total Transaksi: <span class="text-blue-600 font-bold">1.920</span></p>
+        <canvas id="lineChart" class="mt-6"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Penilaian Toko -->
+  <section class="p-6 mt-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Penilaian Toko</h2>
+    <div class="bg-white p-6 rounded shadow text-center">
+      <p class="text-lg text-gray-700 mb-4">Rating Keseluruhan: <span class="text-yellow-500 font-bold">4.8 / 5.0</span> ⭐</p>
+      <p class="text-gray-600 mb-2">Berdasarkan <strong>1.500+ ulasan pelanggan</strong> yang puas</p>
+      <p class="text-gray-600 italic">"Pelayanan cepat dan produk original! Sangat recommended." - Andi, Jakarta</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10 mt-10">
+    <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Kontak -->
+      <div>
+        <h4 class="font-bold text-lg mb-2 text-blue-400">Kontak Kami</h4>
+        <p class="mb-1">WhatsApp: <a href="https://wa.me/6282117862420" class="hover:text-blue-300 underline">+62 821-1786-2420</a></p>
+        <p class="mb-1">Email: <a href="mailto:muhammaddaiwana@gmail.com" class="hover:text-blue-300 underline">muhammaddaiwana@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/wanna_project25" class="hover:text-blue-300 underline">@wanna_project25</a></p>
+      </div>
+      <!-- Alamat -->
+      <div>
+        <h4 class="font-bold text-lg mb-2 text-blue-400">Alamat Toko</h4>
+        <p class="mb-1">Jl. Otomotif No. 123</p>
+        <p class="mb-1">Kota Motor, 12345</p>
+        <p>Indonesia</p>
+      </div>
+      <!-- Media Sosial -->
+      <div>
+        <h4 class="font-bold text-lg mb-2 text-blue-400">Ikuti Kami</h4>
+        <div class="flex gap-4 mt-2">
+          <a href="https://facebook.com/wannaauto" target="_blank" aria-label="Facebook" class="hover:text-blue-400">
+            <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5.006 3.657 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 17.006 22 12"></path></svg>
+          </a>
+          <a href="https://instagram.com/wanna_auto" target="_blank" aria-label="Instagram" class="hover:text-pink-400">
+            <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 2.25a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5zm0 1.5a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5zm6.25 1.25a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path></svg>
+          </a>
+          <a href="mailto:info@wannaauto.com" aria-label="Email" class="hover:text-blue-400">
+            <svg class="w-7 h-7 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 6.81A2.25 2.25 0 0 1 4.25 5h15.5a2.25 2.25 0 0 1 2.24 1.81l-10 6.25-10-6.25zm-.01 2.43v8.01A2.25 2.25 0 0 0 4.25 19.5h15.5a2.25 2.25 0 0 0 2.25-2.25v-8.01l-9.47 5.91a.75.75 0 0 1-.81 0L2 9.24z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-gray-400 text-sm mt-8">
+      &copy; 2025 Wanna_Auto. Semua Hak Dilindungi.
+    </div>
+  </footer>
+
+  <!-- ChartJS Scripts -->
+  <script>
+    let pieChartInstance = null;
+    let lineChartInstance = null;
+
+    function createCharts() {
+      if (!pieChartInstance) {
+        const ctxPie = document.getElementById('pieChart').getContext('2d');
+        pieChartInstance = new Chart(ctxPie, {
+          type: 'pie',
+          data: {
+            labels: ['Oli Mesin', 'Kampas Rem', 'Aki GS Astra'],
+            datasets: [{
+              label: 'Jumlah Terjual',
+              data: [1200, 850, 780],
+              backgroundColor: ['#3B82F6', '#10B981', '#F59E0B']
+            }]
+          }
+        });
+      }
+      if (!lineChartInstance) {
+        const ctxLine = document.getElementById('lineChart').getContext('2d');
+        lineChartInstance = new Chart(ctxLine, {
+          type: 'line',
+          data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+            datasets: [{
+              label: 'Penjualan (Rp)',
+              data: [90000000, 115000000, 140000000, 185000000],
+              borderColor: '#3B82F6',
+              backgroundColor: 'rgba(59, 130, 246, 0.2)',
+              fill: true,
+              tension: 0.4
+            }]
+          }
+        });
+      }
+    }
+
+    // Intersection Observer untuk trigger animasi chart saat section terlihat
+    const analisisSection = document.getElementById('analisis');
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          createCharts();
+          obs.disconnect(); // hanya trigger sekali
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(analisisSection);
+
+    // Scroll smooth ke analisis
+    document.getElementById('scrollToAnalisis').addEventListener('click', function() {
+      document.getElementById('analisis').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
